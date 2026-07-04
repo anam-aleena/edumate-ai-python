@@ -19,7 +19,18 @@ st.set_page_config(page_title="EduMate AI", page_icon="🎓", layout="wide")
 # ---------------------------------------------------------------
 st.markdown("""
 <style>
-    .stApp { background-color: #EFF3F1; }
+    .stApp { background-color: #EFF3F1; color: #1E2A28; }
+    .stApp, .stApp p, .stApp li, .stApp span, .stApp label,
+    .stMarkdown, .stMarkdown p, .stMarkdown li,
+    div[data-testid="stMarkdownContainer"] p,
+    div[data-testid="stMarkdownContainer"] li {
+        color: #1E2A28 !important;
+    }
+    div[data-testid="stMetricValue"] { color: #123832 !important; }
+    div[data-testid="stMetricLabel"] { color: #4B5A57 !important; }
+    .stApp h1, .stApp h2, .stApp h3 { color: #123832 !important; }
+    section[data-testid="stSidebar"] { background-color: #FFFFFF !important; }
+    section[data-testid="stSidebar"] * { color: #1E2A28 !important; }
     .edumate-header {
         background: #123832;
         color: #F3EFE3;
